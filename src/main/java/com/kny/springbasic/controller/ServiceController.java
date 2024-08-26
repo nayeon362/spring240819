@@ -1,8 +1,6 @@
 package com.kny.springbasic.controller;
 
-import java.util.*;
-
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.kny.springbasic.service.BasicService;
 // import com.kny.springbasic.service.implement.BasicServiceImplement;
 
-import lombok.AllArgsConstructor;
+// import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -50,8 +48,6 @@ public class ServiceController {
     // public ServiceController(BasicService basicService) {
         // this.basicService = basicService;
     // }
-
-    private Date today;
 
     @GetMapping("")
     public ResponseEntity<String> getService() {
