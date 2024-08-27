@@ -1,11 +1,11 @@
 package com.kny.springbasic.controller;
 
+// import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
-// import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 // import org.springframework.web.bind.annotation.ResponseBody;
@@ -38,42 +38,42 @@ public class BasicController {
     // HTTP GET method : 클라이언트가 서버로부터 데이터를 받기위한 메서드
     // Request Body가 존재하지 않음
     @GetMapping("")
-    public String getMethod(){
+    public String getMethod() {
         return "GET Method";
     }
 
     // HTTP POST method : 클라이언트가 서버에 리소스를 작성하기 위한 메서드
     // Request Body가 존재함
     @PostMapping("")
-    public String postMethod(){
+    public String postMethod() {
         return "POST Method";
     }
 
     // HTTP PUT method : 클라이언트가 서버에 리소스를 전체 수정하기 위한 메서드
     // Request Body가 존재함
     @PutMapping("")
-    public String putMethod(){
+    public String putMethod() {
         return "PUT Method";
     }
 
     // HTTP PATCH method : 클라이언트가 서버에 리소스를 일부 수정하기 위한 메서드
     // Request Body가 존재함
     @PatchMapping("")
-    public String patchMethod(){
+    public String patchMethod() {
         return "PATCH Method";
     }
 
     // HTTP DELETE method : 클라이언트가 서버에 리소스를 삭제하기 위한 메서드
-     // Request Body가 존재하지 않음
+    // Request Body가 존재하지 않음
     @DeleteMapping("")
     public String deleteMethod() {
         return "DELETE Method";
     }
 
     // Method + URL Pattern이 중복되면 서버 실행중에 에러가 발생
-    // @GetMapping("/frist")
+    // @GetMapping("/first")
     // public String getFirst() {
     //     return "get first";
     // }
-
+    
 }

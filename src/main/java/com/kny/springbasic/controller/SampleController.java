@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.kny.springbasic.service.SampleService;
+import com.kny.springbasic.Service.SampleService;
 import com.kny.springbasic.dto.PostSample1RequestDto;
 
 import jakarta.validation.Valid;

@@ -18,12 +18,10 @@ public class SpringbasicApplication {
 		lombok.getField1();
 		lombok.setField3(null);
 
-		//lombok = new Lombok();
+		// lombok = new Lombok();
 		lombok = new Lombok("d", "e");
 
 		lombok.isField4();
 		lombok.getField5();
-
 	}
-
 }
