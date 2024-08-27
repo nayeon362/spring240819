@@ -14,11 +14,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "st2")
-@Table(name = "sample_table_2")
+@Entity(name="st2")
+@Table(name="sample_table2")
 public class SampleTable2Entity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer sampleAi;
-    private Boolean sampleColumn;
+    private boolean samplecolumn;
 }
