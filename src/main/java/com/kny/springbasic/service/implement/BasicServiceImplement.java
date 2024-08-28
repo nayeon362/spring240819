@@ -1,11 +1,11 @@
-package com.kny.springbasic.Service.implement;
+package com.kny.springbasic.service.implement;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 // import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import com.kny.springbasic.Service.BasicService;
+import com.kny.springbasic.service.BasicService;
 
 
 // Service 레이어 :
