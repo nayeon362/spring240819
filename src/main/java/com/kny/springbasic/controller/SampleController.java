@@ -21,19 +21,17 @@ import lombok.RequiredArgsConstructor;
 public class SampleController {
 
     private final SampleService sampleService;
-    
+
     @PostMapping("")
-    public ResponseEntity<String> postSample1 (
-        @RequestBody @Valid PostSample1RequestDto requestBody
-    ) {
+    public ResponseEntity<String> postSample1(
+            @RequestBody @Valid PostSample1RequestDto requestBody) {
         ResponseEntity<String> response = sampleService.postSample1(requestBody);
         return response;
     }
 
     @DeleteMapping("/{sampleId}")
-    public ResponseEntity<String> deleteSample1 (
-        @PathVariable("sampleId") String sampleId
-    ) {
+    public ResponseEntity<String> deleteSample1(
+            @PathVariable("sampleId") String sampleId) {
         ResponseEntity<String> response = sampleService.deleteSample1(sampleId);
         return response;
     }
@@ -41,6 +39,13 @@ public class SampleController {
     @GetMapping("")
     public ResponseEntity<String> queryMethod() {
         ResponseEntity<String> response = sampleService.queryString();
+        return response;
+    }
+
+    @GetMapping("/jwt/{name}")
+    public String getJwt(
+        @PathVariable("name") String name) {
+        String response = sampleService.getJwt(name);
         return response;
     }
 
